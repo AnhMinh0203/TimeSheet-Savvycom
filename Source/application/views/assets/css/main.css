@@ -1,0 +1,325 @@
+/* Start sidebar */
+.feature-item{
+    line-height: 4rem;
+    font-size: 1.6rem;
+    padding-left: 25px;
+    margin: 6px 0;
+    transition: background-color 0.3s ease;
+}
+.fa-chevron-down {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.active {
+    background-color: var(--primary--color);
+    color: #fff !important;
+}
+.feature-item a{
+    text-decoration: none;
+    color: var(--text--color);
+    position: relative;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+}
+.feature-item a span{
+    padding-left: 10px;
+    flex: 1;
+}
+
+.feature-item.active a span{
+    color: #fff;
+}
+.feature-item.active a svg {
+    stroke: rgb(255, 255, 255) !important; 
+}
+.child-feature {
+    margin-left: -40px;
+    transition: max-height 0.6s ease;
+}
+.child-feature li{
+    padding-left: 15px;
+}
+.child-feature a{
+    display: block;
+    width: 100%;
+    padding-left: 60px;
+}
+.part_1,
+.part_3,
+.part_2{
+    border: 2px solid black;
+    height: 200px;
+}
+.fa-chevron-down {
+    transition: transform 0.3s ease;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+/* End sidebar */
+
+/* Start header */
+.container-header{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    /* background-color: #6e6b7b; */
+}
+.header-left-side{
+    display: flex;
+}
+.header-left-side-item{
+    margin-right: 10px;
+}
+.header-left-side-separate,
+.header-left-side-text{
+    margin-top: 2px;
+}
+
+.header-right-side-dropdown{
+    color: #6e6b7b;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    padding: 5px 20px;
+    width: 150px;
+}
+.selected-option i{
+    font-size: 1rem;
+    margin: 0 10px;
+}
+.header-right-side-dropdown:hover,
+.header-active{
+    border: 1px solid var(--primary--color);
+    transition: border 0.3s ease;
+}
+.header-text-active{
+    background-color: rgba(60, 109, 115,0.5);
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+.options-list{
+    position: absolute;
+    width: 150px;
+    top: calc(100% + var(--header--distance));
+    left: 0;
+    box-shadow: 0 1px 3px #b8b5b5;
+}
+.options-list li{
+    padding: 5px 20px;
+}
+.header-account-item{
+    margin-right: 20px;
+}
+.header-account-icon i{
+    font-size: 2rem;
+    color: var(--primary--color);
+}
+.header-account-infor{
+    width: 200px;
+    top: 35px;
+    right: -10px;
+    border: 1px solid #dedbdb;
+    box-shadow: 0 1px 3px #b8b5b5;
+}
+.header-account-infor a{
+    text-decoration: none;
+    color: #6e6b7b;
+}
+.header-account-infor svg{
+    margin-right: 5px;
+}
+.header-account-infor li{
+    padding: 5px 5px 5px 15px;
+}
+.header-account-infor li:hover{
+    background-color: rgba(60, 109, 115,0.5);
+}
+
+/* End header */
+
+/* Start working time */
+.working-check-time,
+.working-work-log{
+    border: 1px solid #cccbce;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.working-check-time-meassure {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.check-time-percent {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #e0e0e0;
+    position: relative;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: rgb(60, 109, 115);
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+/* End working time*/
+/* Start Login and Register */
+.register {
+    margin: 0; 
+    padding: 0;
+    background: url('../img/background.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    min-height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .img-svg {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .register-container{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    width: 900px;
+  }
+  .register-form{
+    background-color: rgba(102, 32, 71,0.3);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .register-form h1{
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 50px 0;
+  }
+  .form-group{
+   margin: 5px 10px;
+   position: relative;
+  }
+  
+  .form-group input{
+    width:100%;
+    box-sizing: border-box;
+    background-color: rgba(102, 32, 71,0.3);
+    outline: none;
+    height: 35px;
+    background-color:  rgba(102, 32, 71,0.001);
+    border: none;
+    border-bottom: 1px solid #fff;
+    caret-color: #fff;
+    color: #fff;
+  }
+  .form-group input::placeholder{
+    color: #fff;
+  }
+  .group-name input{
+    width: 48%; 
+    margin-bottom: 20px;
+  }
+  .group-name input:nth-child(1) {
+    margin-right: 4%; 
+  }
+  .group-submit:hover{
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  .group-submit input{
+    width: 100%;
+    background-color: #CA324B;
+    border: none;
+    border-radius: 5px;
+  }
+  .group-name{
+    display: flex;
+  }
+  .register-navigate-login{
+    text-align: center;
+  }
+  .register-navigate-login p{
+    color: #fff;
+  }
+  .register-navigate-login a{
+    color: #fff;
+    font-weight: 900;
+  }
+  .register-intro{
+    padding: 20px;
+    /* background-image: ; */
+  }
+  .register-intro-logo{
+    text-align: center;
+    margin: 15px 0 70px 0;
+  }
+  .register-intro-logo img {
+    width: 80%;
+    filter: invert(1);
+  }
+  .register-intro-desc p,
+  .register-intro-heading h1{
+    color:#fff ;
+    margin-left: 10%;
+    margin-bottom: 30px;
+  }
+  .register-intro-contact{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 60px;
+  }
+  .register-intro-contact i{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 30px;
+  }
+  .group-checkbox{
+    margin: 30px 10px;
+  }
+  .group-dob input{
+    color: #fff;
+  }
+  .register-navigate-login a:hover{
+    color: #CA324B;
+    transition: color 0.3s ease;
+  }
+  .group-nameAccount input,
+  .group-password-login input{
+    margin: 10px 0;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  .form-group i{
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 18px;
+  }
+  .group-nameAccount i,
+  .group-password-login i{
+    top: 20px;
+  }
+  .group-password-login .open-eye-icon{
+    display: none;
+  }
+  .checkbox-login{
+    margin-right: 10px;
+  }
+  
+  /* End Login and Register */

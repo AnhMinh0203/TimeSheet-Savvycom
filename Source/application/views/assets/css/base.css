@@ -1,0 +1,26 @@
+:root{
+    --white--color: #fff;
+    --black--color:#000;
+    --text--color:#6e6b7b;
+    --primary--color: #3C6D73;
+    --warning--color: #ff4d4f;
+    --header--distance: 8px;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem; /*16px*/
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    color: var(--text--color);
+}
+
